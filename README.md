@@ -1,2 +1,2 @@
 # gamDev
-Sitio wed para el concurso de Deletreo.
+Sitio web para el concurso de Deletreo.
