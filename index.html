@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla con CSS Grid</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(rgb(75, 221, 39),rgb(61, 84, 234), rgb(146, 45, 246));
+            height: 600px;
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas del mismo tamaño */
+            grid-template-rows: auto; /* Altura automática */
+            gap: 20px; /* Espacio entre las celdas */
+            padding: 20px;
+        }
+
+        .header, .footer {
+            grid-column: 1 / -1; /* Ocupa todas las columnas */
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .sidebar {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .main-content {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        /* Media query para hacer que la plantilla sea responsive */
+        @media screen and (max-width: 768px) {
+            .wrapper {
+                grid-template-columns: 1fr; /* Una columna para dispositivos móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 style="text-align: center;">Dele...tréalo</h1>
+        </div>
+        <div class="sidebar">
+            <h2>Barra lateral</h2>
+            <ul>
+                <li>Enlace 1</li>
+                <li>Enlace 2</li>
+                <li>Enlace 3</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>¿Qué es un concurso de deletreo?</h2>
+            <p>Un concurso de deletreo es un evento en el que los participantes compiten entre sí para demostrar su habilidad para deletrear palabras correctamente. Cada concursante recibe una palabra y debe escribirla o decir su deletreo en voz alta, mostrando su dominio del idioma y la ortografía</p>
+        </div>
+        <div class="main-content">
+            <h2>¿Qué nos aporta?</h2>
+            <p>Lograr el dominio y seguridad para decodificar palabras.</p>
+            <p>Adquirir el manejo de técnicas de estudio y memorización comprensiva para aprender palabras que resulten difíciles.</p>
+            <p>Mejor léxico</p>
+        </div>
+        <div class="footer">
+            <p>Pie de página</p>
+        </div>
+    </div>
+</body>
+</html>
