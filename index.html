@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantilla con CSS Grid</title>
     <style>
+
+
         body {
             margin: 0;
             background: linear-gradient(rgb(75, 221, 39),rgb(61, 84, 234), rgb(146, 45, 246));
@@ -43,6 +45,10 @@
                 grid-template-columns: 1fr; /* Una columna para dispositivos móviles */
             }
         }
+
+
+            
+        
     </style>
 </head>
 <body>
@@ -53,9 +59,26 @@
         <div class="sidebar">
             <h2>Barra lateral</h2>
             <ul>
-                <li>Enlace 1</li>
-                <li>Enlace 2</li>
-                <li>Enlace 3</li>
+                <pre>
+<button onclick="redirectToOtroArchivo()">Crear concurso</button>
+<br>
+<button onclick="redirectToOtroArchivo()">Informacion del concurso</button>
+<br>
+<button onclick="redirectToOtroArchivo()">Registar participantes</button>
+                </pre>
+
+                <script>
+                    function redirectToOtroArchivo() {
+                        // Redireccionar a otro archivo HTML
+                        window.location.href = "otro_archivo.html";
+                    }
+                </script>
+
+
+
+
+
+                
             </ul>
         </div>
         <div class="main-content">
