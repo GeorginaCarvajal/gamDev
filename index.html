@@ -52,11 +52,36 @@
         </div>
         <div class="sidebar">
             <h2>Barra lateral</h2>
-            <ul>
-                <li>Enlace 1</li>
-                <li>Enlace 2</li>
-                <li>Enlace 3</li>
-            </ul>
+            <pre>
+<button style="width: 200px;" onclick="redirectToOtroArchivo1()">Crear concurso</button>
+<br>
+<button style="width: 200px;" onclick="redirectToOtroArchivo2()">Informacion del concurso</button>
+<br>
+<button style="width: 200px;"onclick="redirectToOtroArchivo3()">Registar participantes</button>
+            </pre>
+
+            <script>
+                function redirectToOtroArchivo1() {
+                    // Redireccionar a otro archivo HTML
+                    window.location.href = "crear_concurso.html";
+                }
+            </script>
+            
+
+            <script>
+                function redirectToOtroArchivo1() {
+                    // Redireccionar a otro archivo HTML
+                    window.location.href = "infor.html";
+                }
+            </script>
+
+            <script>
+                function redirectToOtroArchivo1() {
+                    // Redireccionar a otro archivo HTML
+                    window.location.href = "participantes.html";
+                }
+            </script>
+
         </div>
         <div class="main-content">
             <h2>¿Qué es un concurso de deletreo?</h2>
@@ -69,7 +94,8 @@
             <p>Mejor léxico</p>
         </div>
         <div class="footer">
-            <p>Pie de página</p>
+            <p>Colegio San Jose de Guanenta</p>
+            <p>Especialidad en sistemas</p>
         </div>
     </div>
 </body>
