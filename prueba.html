@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Ganador!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mathieuanthoine/confetti.js/dist/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Ganador!</h1>
+        <div id="winnerPhoto">
+            <img src="foto.jpeg" alt="Foto del ganador">
+        </div>
+        <button onclick="celebrateWinner()">Mostrar Confeti</button>
+    </div>
+
+    <script>
+        function celebrateWinner() {
+            // Mostrar confeti
+            confetti.create(document.getElementById('winnerPhoto'), {
+                resize: true,
+                useWorker: true
+            })({ particleCount: 200, spread: 200 });
+        }
+    </script>
+</body>
+</html>
+
+
