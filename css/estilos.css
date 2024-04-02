@@ -8,6 +8,12 @@
 .h1, h2 {
     font-size: 50%;
 }
-.footer {
-    text-align: center;
+
+.footer .grupo-1{
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3);
+
 }
