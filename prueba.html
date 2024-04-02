@@ -1,31 +1,115 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Ganador!</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@mathieuanthoine/confetti.js/dist/index.js"></script>
+    <title>Ejemplo HTML y CSS</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            background: linear-gradient(rgb(75, 221, 39),rgb(61, 84, 234), rgb(146, 45, 246));
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos de la barra de navegación */
+        .navbar {
+            background-color: #50a3a2;
+            overflow: hidden;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #459491;
+        }
+
+        /* Estilos del contenido */
+        .content {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            margin-top: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        /* Estilos de las secciones de reglas, participantes, etc. */
+        .section {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .section pre {
+            font-family: Arial, sans-serif;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>¡Ganador!</h1>
-        <div id="winnerPhoto">
-            <img src="foto.jpeg" alt="Foto del ganador">
-        </div>
-        <button onclick="celebrateWinner()">Mostrar Confeti</button>
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="ss">Crear concurso</a>
+        <a href="participantes.html">Participantes</a>
     </div>
 
-    <script>
-        function celebrateWinner() {
-            // Mostrar confeti
-            confetti.create(document.getElementById('winnerPhoto'), {
-                resize: true,
-                useWorker: true
-            })({ particleCount: 200, spread: 200 });
-        }
-    </script>
+    <div class="content">
+        <div id="rules" class="section">
+            <h2>Justificación</h2>
+            <p>Una de las grandes dificultades de la enseñanza de hoy en día es la gran cantidad de faltas de ortografía (disortografía) que cometen los alumnos. Y esta situación no es solamente escolar, afecta a todos los niveles de la sociedad, pues, aunque los procesadores de texto incorporan herramientas de corrección ortográfica, con frecuencia se pueden observar faltas de ortografía en periódicos, en cualquier tipo de impreso, y hasta en los mensajes de textos.</p>
+        </div>
+
+        <div id="participants" class="section">
+            <h2>Descripción</h2>
+            <p>El proyecto busca valerse de la implementación de un concurso de deletreo en donde se invite a participar estudiantes desde sexto a undécimo grado del Colegio San José de Guanentá. En la cual, los estudiantes y el docente de Lengua Castellana sobre la base de consulta de la etimología y la búsqueda del significado de las palabras, organizan el listado a utilizar y preparan la difusión y propaganda del concurso, las condiciones, bases, reglamento del mismo, junto con la selección del jurado; para luego ejecutarlo.</p>
+        </div>
+
+        <div id="board" class="section">
+            <h2>Criterios de valoración</h2>
+            <pre>
+                <p>● Él/la concursante debe deletrear de forma correcta tres palabras dadas en un sobre por el Jurado.</p>
+                <p>● Él/la concursante que no deletree en forma correcta queda eliminado(a).</p>
+                <p>● Cada concursante tiene 30 segundos para deletrear cada palabra.</p>
+                <p>● Si él/la concursante excede el tiempo quedará eliminado(a).</p>
+                <p>● Se penaliza al concursante que repita o corrija la palabra deletreada.</p>
+                <p>● Se da a conocer el ganador y se hace la premiación.</p>
+                <p>● Los siguientes grafemas se deletrean así: /II/ doble ele; /ch/ - /c/ /h/; /y/ - /ye/.</p>
+                <p>● La vocal tildada: ejemplo concepción, se dice o con tilde.</p>
+                <p>● En la palabra que lleva diéresis: ej.: lengüeta se dice u con diéresis.</p>
+            </pre>
+        </div>
+
+        <div id="phases" class="section">
+            <h2>Fases</h2>
+            <pre>
+                <p>● En la primera fase se desarrolla el concurso por grupo seleccionando un estudiante ganador, quien irá a representar a su curso.</p>
+                <p>● La segunda fase se presentan los estudiantes ganadores del mismo grado, quedando uno como ganador quien representa al grado correspondiente.</p>
+                <p>● En la tercera fase se presentan los ganadores de la categoría Juvenil de 6 a 11 grado.</p>
+            </pre>
+        </div>
+    </div>
 </body>
 </html>
-
-
